@@ -1,0 +1,26 @@
+section {
+  .btn-cte {
+    width: 170px;
+    height: 45px;
+    background: #f2ad5f;
+    border-radius: 56px;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    align-items: center;
+    color: #986121;
+  }
+
+  .btn-cte::after {
+    content: "";
+    display: block;
+    margin: 7px 15px 0 15px;
+    width: 119px;
+    height: 6px;
+    left: 661px;
+    top: 407px;
+    background: #f2ad5f;
+    filter: blur(20px);
+    border-radius: 85px;
+  }
+}
