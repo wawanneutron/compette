@@ -32,3 +32,28 @@ nav.navbar {
   background: #16161a;
   color: #fffffe;
 }
+
+/* responsive */
+@media (max-width: 768px) {
+  .sticky {
+    padding: 10px 20px !important;
+  }
+
+  nav.navbar {
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 987px) {
+  .sticky {
+    padding: 10px 20px !important;
+  }
+  nav.navbar {
+    padding: 40px 20px;
+    .navbar-nav {
+      a.nav-link {
+        margin-left: 12px;
+      }
+    }
+  }
+}
