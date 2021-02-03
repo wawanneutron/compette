@@ -1,9 +1,79 @@
 .main-featured {
   margin-top: 150px;
+  .row-featured {
+    margin: 70px 0 140px 30px;
+  }
   h1 {
     font-weight: 600;
     font-size: 48px;
     line-height: 65px;
     color: #0f1d37;
+  }
+
+  /* card */
+  .card-featured {
+    min-height: 402px;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 16px;
+    .head {
+      img {
+        float: left;
+        margin-right: 16px;
+      }
+      .title {
+        font-weight: normal;
+        font-size: 22px;
+        color: #0f1d37;
+      }
+      .sub-title {
+        font-weight: normal;
+        font-size: 14px;
+        color: #cacad2;
+      }
+    }
+    h2 {
+      font-weight: 500;
+      font-size: 48px;
+      color: #10495c;
+      margin-top: 62px;
+      span {
+        font-weight: normal;
+        font-size: 22px;
+        color: #0f1d37;
+      }
+    }
+    p {
+      font-weight: normal;
+      font-size: 22px;
+      line-height: 30px;
+      color: #0f1d37;
+      margin-top: 55px;
+    }
+    .badge {
+      .text-badge {
+        background: #0d454d;
+        padding: 7px 12px !important;
+        color: #65d9e4;
+        border-radius: 6px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        margin: 0 200px 0 0;
+      }
+    }
+  }
+}
+
+/* responsive */
+
+@media (max-width: 768px) {
+  .main-featured {
+    .row-featured {
+      margin: 70px 0 140px -30px !important;
+    }
+    h1 {
+      font-size: 35px !important;
+    }
   }
 }
