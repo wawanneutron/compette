@@ -202,6 +202,10 @@ main.main-reason .reason img {
   width: 563.01px;
 }
 
+main.main-reason .col-reason .reason-content {
+  /* more info */
+}
+
 main.main-reason .col-reason .reason-content h1 {
   font-weight: 600;
   font-size: 48px !important;
@@ -212,17 +216,17 @@ main.main-reason .col-reason .reason-content .about {
   margin: 50px 0 50px 0;
   font-size: 22px;
   color: #0f1d37;
-  line-height: 50px;
 }
 
-main.main-reason .col-reason .reason-content .about .radio {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+main.main-reason .col-reason .reason-content .about ul li {
+  margin: 30px 0 0 -35px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 10px;
 }
 
 main.main-reason .col-reason .reason-content .about .radio__input {
@@ -234,10 +238,10 @@ main.main-reason .col-reason .reason-content .about .radio__radio {
   height: 28px;
   border: 1.5px solid #0f1d37;
   border-radius: 50%;
-  margin-right: 16px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 4px;
+  margin-right: 16px;
 }
 
 main.main-reason .col-reason .reason-content .about .radio__radio::after {
@@ -251,7 +255,29 @@ main.main-reason .col-reason .reason-content .about .radio__radio::after {
   border-radius: 50%;
 }
 
-main.main-reason .col-reason .reason-content .about .more a {
+main.main-reason .col-reason .reason-content .about .radio__radio_ornge {
+  width: 28px;
+  height: 28px;
+  border: 1.5px solid #0f1d37;
+  border-radius: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 4px;
+  margin-right: 16px;
+}
+
+main.main-reason .col-reason .reason-content .about .radio__radio_ornge::after {
+  content: "";
+  width: 18px;
+  height: 18px;
+  margin-left: -3%;
+  margin-top: -3%;
+  display: block;
+  background: #f2ad5f;
+  border-radius: 50%;
+}
+
+main.main-reason .col-reason .reason-content .more a {
   font-size: 16px;
   line-height: 18px;
   -webkit-text-decoration-line: underline;
@@ -273,6 +299,17 @@ main.main-reason .col-reason .reason-content .about .more a {
     font-size: 22px;
     color: #0f1d37;
   }
+}
+
+.main-featured {
+  margin-top: 150px;
+}
+
+.main-featured h1 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 65px;
+  color: #0f1d37;
 }
 
 section .btn-cte {

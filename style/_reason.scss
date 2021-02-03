@@ -17,13 +17,13 @@ main.main-reason {
         margin: 50px 0 50px 0;
         font-size: 22px;
         color: #0f1d37;
-        line-height: 50px;
-
-        .radio {
-          display: inline-flex;
+        ul li {
+          margin: 30px 0 0 -35px;
+          list-style: none;
+          display: flex;
           align-items: center;
-          margin-right: 10px;
         }
+
         .radio__input {
           display: none;
         }
@@ -32,9 +32,9 @@ main.main-reason {
           height: 28px;
           border: 1.5px solid #0f1d37;
           border-radius: 50%;
-          margin-right: 16px;
           box-sizing: border-box;
           padding: 4px;
+          margin-right: 16px;
         }
         .radio__radio::after {
           content: "";
@@ -46,13 +46,32 @@ main.main-reason {
           background: #10495c;
           border-radius: 50%;
         }
-        .more a {
-          font-size: 16px;
-
-          line-height: 18px;
-          text-decoration-line: underline;
-          color: #0f1d37 !important;
+        .radio__radio_ornge {
+          width: 28px;
+          height: 28px;
+          border: 1.5px solid #0f1d37;
+          border-radius: 50%;
+          box-sizing: border-box;
+          padding: 4px;
+          margin-right: 16px;
         }
+        .radio__radio_ornge::after {
+          content: "";
+          width: 18px;
+          height: 18px;
+          margin-left: -3%;
+          margin-top: -3%;
+          display: block;
+          background: #f2ad5f;
+          border-radius: 50%;
+        }
+      }
+      /* more info */
+      .more a {
+        font-size: 16px;
+        line-height: 18px;
+        text-decoration-line: underline;
+        color: #0f1d37 !important;
       }
     }
   }
