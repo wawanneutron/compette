@@ -1,0 +1,22 @@
+/* scrom */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #16161a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f2ad5f;
+  border-radius: 15px;
+  &:hover {
+    background: #986121;
+  }
+}
+
+/* firefox */
+:root {
+  scrollbar-color: #f2ad5f #986121 !important;
+  scrollbar-width: thin !important;
+}

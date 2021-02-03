@@ -1,0 +1,37 @@
+.card-subscribe {
+  position: relative;
+  background: #10495c;
+  border-radius: 20px;
+  padding: 40px 20px 0px 20px;
+  margin: 100px 0 160px 0;
+  .union {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url("/images/Union-subscribe.svg") no-repeat;
+  }
+
+  .title {
+    z-index: 99 !important;
+    font-weight: 500;
+    font-size: 26px;
+    text-align: center;
+    color: #ffffff;
+  }
+  .subtitle {
+    z-index: 99 !important;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+    color: #b0c3c9;
+  }
+  .input-group {
+    margin: 50px 0 57px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  //
+}
