@@ -204,7 +204,7 @@ main.main-reason .reason img {
 
 main.main-reason .col-reason .reason-content h1 {
   font-weight: 600;
-  font-size: 48px;
+  font-size: 48px !important;
   color: #0f1d37;
 }
 
@@ -212,6 +212,22 @@ main.main-reason .col-reason .reason-content .about {
   font-weight: normal;
   font-size: 22px;
   color: #0f1d37;
+}
+
+@media (max-width: 768px) {
+  main.main-reason .col-reason .reason-content {
+    margin-top: 50px;
+  }
+  main.main-reason .col-reason .reason-content h1 {
+    font-weight: 600;
+    font-size: 35px !important;
+    color: #0f1d37;
+  }
+  main.main-reason .col-reason .reason-content .about {
+    font-weight: normal;
+    font-size: 22px;
+    color: #0f1d37;
+  }
 }
 
 section .btn-cte {
