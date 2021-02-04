@@ -1,37 +1,81 @@
-.card-subscribe {
-  position: relative;
-  background: #10495c;
-  border-radius: 20px;
-  padding: 40px 20px 0px 20px;
-  margin: 100px 0 160px 0;
-  .union {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: url("/images/Union-subscribe.svg") no-repeat;
-  }
+.col-subs {
+  padding: 0 0 !important;
 
-  .title {
-    z-index: 99 !important;
-    font-weight: 500;
-    font-size: 26px;
-    text-align: center;
-    color: #ffffff;
-  }
-  .subtitle {
-    z-index: 99 !important;
-    font-weight: normal;
-    font-size: 16px;
-    text-align: center;
-    color: #b0c3c9;
-  }
-  .input-group {
-    margin: 50px 0 57px 0;
+  .card-subscribe {
+    position: relative;
+    background: #10495c;
+    border-radius: 20px;
+    padding: 40px 20px 0px 20px;
+    margin: 100px 0 160px 0;
+    .union {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: url("/images/Union-subscribe.svg") no-repeat;
+    }
+
+    .title {
+      z-index: 99 !important;
+      font-weight: 500;
+      font-size: 26px;
+      text-align: center;
+      color: #ffffff;
+    }
+    .subtitle {
+      z-index: 99 !important;
+      font-weight: normal;
+      font-size: 16px;
+      text-align: center;
+      color: #b0c3c9;
+    }
+    .input-group {
+      margin: 50px 0 57px 0;
+      padding: 0 50px;
+      justify-content: center !important;
+      position: relative;
+    }
+    input {
+      display: inline-block;
+      font-size: 16px;
+    }
+    input[type="email"] {
+      font-size: 16px;
+      color: #0f1d37;
+      width: 397px;
+      height: 45px;
+      border-radius: 9px 85px 85px 9px;
+    }
+    .btn-cte {
+      z-index: 99;
+      right: 50px;
+      position: absolute;
+    }
   }
 }
 
 @media (max-width: 768px) {
-  //
+  .col-subs {
+    padding: 0 0 !important;
+
+    .card-subscribe {
+      position: relative;
+      background: #10495c;
+      border-radius: unset;
+      padding: 40px 20px 0px 20px;
+      margin: 100px 0 160px 0;
+    }
+  }
+  .input-group {
+    margin: 50px 0 57px 0;
+    padding: 0 0px !important;
+    justify-content: center !important;
+    position: relative;
+  }
+  .btn-cte {
+    z-index: 99;
+    right: 0 !important;
+    position: absolute;
+  }
 }
