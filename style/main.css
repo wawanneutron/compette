@@ -134,6 +134,21 @@ section::before {
   font-family: "Asap", sans-serif;
 }
 
+/* icon togler navbar */
+.icon {
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.icon.menu-btn {
+  display: none;
+}
+
+.icon.cancel-btn {
+  display: none;
+}
+
 nav.navbar {
   padding: 40px 90px;
   z-index: 1;
@@ -174,11 +189,64 @@ nav.navbar .navbar-nav .active::after {
 
 /* responsive */
 @media (max-width: 768px) {
+  /* sticky */
   .sticky {
     padding: 10px 20px !important;
   }
+  body.disabledScroll {
+    overflow: hidden;
+  }
+  .icon.menu-btn.hide {
+    display: none !important;
+  }
+  .icon.cancel-btn.hide {
+    display: none !important;
+  }
+  /* icon navbar colapse */
+  .icon.menu-btn {
+    display: block;
+  }
+  .icon.cancel-btn {
+    display: block;
+    position: absolute;
+    right: 30px;
+    cursor: pointer;
+  }
   nav.navbar {
     padding: 40px 20px;
+    /* custom navbar sticky */
+  }
+  nav.navbar .navbar-nav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    width: 100%;
+    max-width: 400px;
+    background: #16161a;
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  nav.navbar .navbar-nav a.nav-link {
+    margin-top: 45px;
+    font-size: 23px;
+  }
+  nav.navbar .navbar-nav .active::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 45.5%;
+    width: 50px;
+    height: 2px;
+    background: #f2ad5f;
+    border-radius: 27px;
+    text-align: center !important;
+  }
+  nav.navbar .navbar-nav.active {
+    left: 0%;
   }
 }
 

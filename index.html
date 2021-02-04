@@ -4,36 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Compette</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="/style/main.css" />
     <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+    <nav class="navbar navbar-expand navbar-dark fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="/images/logo.svg" alt="" />
         </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ml-auto">
-            <a class="nav-link active" href="#"
-              >Learn <span class="sr-only">(Learn)</span></a
-            >
-            <a class="nav-link" href="#">Categories</a>
-            <a class="nav-link" href="#">Stories</a>
-            <a class="nav-link" href="#">Partner</a>
-            <a class="nav-link" href="#">Investor</a>
+        <div class="navbar-nav ml-auto">
+          <div class="icon cancel-btn">
+            <i class="fas fa-times"></i>
           </div>
+          <a class="nav-link active" href="#"
+            >Learn <span class="sr-only">(Learn)</span></a
+          >
+          <a class="nav-link" href="#">Categories</a>
+          <a class="nav-link" href="#">Stories</a>
+          <a class="nav-link" href="#">Partner</a>
+          <a class="nav-link" href="#">Investor</a>
+        </div>
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
         </div>
       </div>
     </nav>
