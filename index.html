@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Compette</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
@@ -38,12 +39,22 @@
       <div class="union">
         <img src="/images/Union.svg" />
       </div>
-      <div class="content text-center">
+      <div
+        class="content text-center"
+        data-aos="zoom-in"
+        data-aos-duration="700"
+      >
         <h1>
           Build Your Career. <br />
           Grow Together & Faster.
         </h1>
-        <a href="#" class="btn btn-cte">Explore Mine</a>
+        <a
+          href="#"
+          class="btn btn-cte"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          >Explore Mine</a
+        >
       </div>
     </section>
     <!-- header img ilustration and partner -->
@@ -55,7 +66,11 @@
           </div>
         </div>
       </div>
-      <div class="row text-center justify-content-center">
+      <div
+        class="row text-center justify-content-center"
+        data-aos="zoom-in"
+        data-aos-duration="300"
+      >
         <div class="col-6 col-lg-3 col-sm-4">
           <div class="partner">
             <img src="/images/fb.png" class="img-fluid" />
@@ -80,18 +95,28 @@
     </div>
     <main class="container-fluid main-reason">
       <div class="row">
-        <div class="col-md-6 col-lg-7 text-center">
+        <div
+          class="col-md-6 col-lg-7 text-center"
+          data-aos="zoom-in"
+          data-aos-duration="300"
+          ata-aos-delay="200"
+        >
           <div class="reason">
             <img src="/images/gallery.png" class="img-fluid" />
           </div>
         </div>
         <div class="col-md-6 col-lg-5 col-reason">
           <div class="reason-content">
-            <h1>
+            <h1 data-aos="zoom-in" data-aos-duration="300" ata-aos-delay="300">
               We help best people <br />
               like you across the world
             </h1>
-            <div class="about">
+            <div
+              class="about"
+              data-aos="zoom-in"
+              data-aos-duration="300"
+              ata-aos-delay="200"
+            >
               <ul>
                 <li>
                   <input type="radio" id="myRadioId" class="radio__input" />
@@ -129,7 +154,7 @@
     </main>
     <main class="container-fluid main-featured">
       <div class="row text-center">
-        <div class="col">
+        <div class="col" data-aos="zoom-in" data-aos-duration="300">
           <h1>
             Our Feature Jobs <br />
             That Might You Need
@@ -137,7 +162,11 @@
         </div>
       </div>
       <div class="row row-featured justify-content-center">
-        <div class="col-lg-3 col-md-4 mb-3">
+        <div
+          class="col-lg-3 col-md-4 mb-3"
+          data-aos="zoom-in"
+          data-aos-duration="300"
+        >
           <div class="card-featured">
             <div class="d-flex flex-column">
               <div class="head">
@@ -153,7 +182,11 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-4 mb-3">
+        <div
+          class="col-lg-3 col-md-4 mb-3"
+          data-aos="zoom-in"
+          data-aos-duration="300"
+        >
           <div class="card-featured">
             <div class="d-flex flex-column">
               <div class="head">
@@ -169,7 +202,11 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-4 mb-3">
+        <div
+          class="col-lg-3 col-md-4 mb-3"
+          data-aos="zoom-in"
+          data-aos-duration="300"
+        >
           <div class="card-featured">
             <div class="d-flex flex-column">
               <div class="head">
@@ -185,7 +222,11 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-4 mb-3">
+        <div
+          class="col-lg-3 col-md-4 mb-3"
+          data-aos="zoom-in"
+          data-aos-duration="300"
+        >
           <div class="card-featured">
             <div class="d-flex flex-column">
               <div class="head">
@@ -203,13 +244,17 @@
         </div>
       </div>
       <div class="row text-center more">
-        <div class="col">
+        <div class="col" data-aos="fade-in" data-aos-duration="300">
           <a href="#">VIEW MORE INCOMING JOBS</a>
         </div>
       </div>
     </main>
     <main class="container-fluid subscribe">
-      <div class="row justify-content-center">
+      <div
+        class="row justify-content-center"
+        data-aos="zoom-in"
+        data-aos-duration="300"
+      >
         <div class="col-lg-6 col-md-7 col-subs">
           <div class="card-subscribe">
             <div class="union"></div>
@@ -239,5 +284,9 @@
     <script src="/vendor/jquery/jquery.min.js"></script>
     <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="/script/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
