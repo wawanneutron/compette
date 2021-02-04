@@ -134,6 +134,10 @@ section::before {
   font-family: "Asap", sans-serif;
 }
 
+body {
+  background: #fafaff;
+}
+
 /* icon togler navbar */
 .icon {
   color: #fff;
